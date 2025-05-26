@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="/static/bootstrap.min.css">
+  <link rel="stylesheet" href="/static/style.css">
+  <style>
+    body {
+      background-color: #f5f5f5;
+      font-family: Arial, sans-serif;
+    }
+
+    .contact-container {
+      background: white;
+      max-width: 1000px;
+      margin: 50px auto;
+      border-radius: 20px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+      overflow: hidden;
+      padding: 30px;
+    }
+
+    .contact-content {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .contact-left {
+      flex: 1;
+      padding-right: 20px;
+      border-right: 2px solid #ddd;
+      text-align: center;
+    }
+
+    .contact-left img:first-child {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    .icon {
+      width: 80px;
+      margin-top: 10px;
+    }
+
+    .contact-right {
+      flex: 1;
+      padding-left: 30px;
+    }
+
+    .contact-right p {
+      margin-bottom: 20px;
+    }
+
+    .contact-right a {
+      color: #007BFF;
+      text-decoration: none;
+    }
+
+    .contact-right a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .contact-content {
+        flex-direction: column;
+      }
+
+      .contact-left, .contact-right {
+        width: 100%;
+        padding: 0;
+        border: none;
+      }
+
+      .contact-right {
+        margin-top: 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation bar -->
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color:darkturquoise; height: 1in;">
+    <div class="container-fluid">
+      <h2 style="padding-right: 5%;">Dealerships</h2>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" style="font-size: larger;" aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="font-size: larger;" href="/about">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" style="font-size: larger;" href="/contact">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Contact Content -->
+  <div class="contact-container">
+    <div class="contact-content">
+      <div class="contact-left">
+        <img src="https://cdn-ds.com/media/1159/w_1920/sz_4275638/3.jpg" alt="Dealership Image">
+        <img src="https://cdn-icons-png.freepik.com/256/1646/1646792.png?semt=ais_hybrid" alt="Support Icon" class="icon">
+      </div>
+      <div class="contact-right">
+        <p><strong>Contact Customer Service</strong><br>
+        <a href="mailto:support@bestcars.com">support@bestcars.com</a></p>
+
+        <p><strong>Contact our National Advertising team</strong><br>
+        <a href="mailto:NationalSales@bestcars.com">NationalSales@bestcars.com</a></p>
+
+        <p><strong>Contact our Public Relations team</strong><br>
+        <a href="mailto:PR@bestcars.com">PR@bestcars.com</a></p>
+
+        <p><strong>Contact the bestcars.com offices</strong><br>
+        312-611-1111</p>
+
+        <p><strong>Become a bestcars.com car dealer</strong><br>
+        <a href="#">Visit growwithbestcars.com</a></p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
